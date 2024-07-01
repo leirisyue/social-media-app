@@ -17,18 +17,40 @@ module.exports = {
       },
     },
     extend: {
+      pastel:{
+        min:'#a37ab4',
+        blue:'#d486b8',
+        pink:'#f1b1c1',
+        purple:'#abbcd6',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        min:{
+          DEFAULT: "#99e5db",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        blue:{
+          DEFAULT: "#83B4FF",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        pink:{
+          DEFAULT: "#FFC0D9",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        purple:{
+          DEFAULT: "#8644A2",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         primary: {
-          DEFAULT: "#6b79d4",
+          DEFAULT: "#01aed9",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#f1b1c1",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {

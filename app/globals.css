@@ -3,13 +3,15 @@
   @tailwind utilities;
 
   body {
-    background-image: linear-gradient(to right,
-    #CCEDE4,
-    #A6D2E1,
-    #D3BAE9,
-    #F3D0F5,
-    #FFE7F7);
+    background-color: #f0f0f0;
     }
+  .background-image{
+    background-image: url(../public/nav.jpg);
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+  }
+
 
 
   @layer base {

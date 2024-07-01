@@ -1,5 +1,5 @@
-import React from 'react'
-import SideNav from './_components/SideNav'
+import Header from './_components/Header';
+import SideNav from './_components/SideNav';
 
 function layout({ children }) {
   return (
@@ -8,10 +8,12 @@ function layout({ children }) {
         <SideNav />
       </div>
       <div className="ml-64">
+        <Header />
         {children}
       </div>
     </>
   )
 }
-// 25:10
+
+
 export default layout
