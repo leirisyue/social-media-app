@@ -3,6 +3,9 @@ import React from 'react'
 
 const AddPost = () => {
 
+  const testAction = async ()=>{
+    
+  }
   return (
     <>
       <div className="p-4 bg-white shadow-md rounded-lg flex gap-4 justify-between text-sm">

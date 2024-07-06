@@ -41,7 +41,6 @@ const CommentList = () => {
           {/* AVATAR */}
           <Image
             alt=""
-            // src={comment.user.avatar || "noAvatar.png"}
             src=""
             width={40}
             height={40}
