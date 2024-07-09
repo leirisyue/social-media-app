@@ -4,6 +4,7 @@ import Birthdays from './Birthdays';
 import Ad from '../Ad';
 import UserInfoCard from '../user/UserInfoCard';
 import UserMediaCard from '../user/UserMediaCard';
+import { User } from '@prisma/client';
 
 const RightMenu = ({ user }: { user?: User }) => {
   return (
@@ -14,7 +15,7 @@ const RightMenu = ({ user }: { user?: User }) => {
             <UserInfoCard user={user} />
           </Suspense>
           <Suspense fallback="loading...">
-            <UserMediaCard user={user} />
+            {/* <UserMediaCard user={user} /> */}
           </Suspense>
         </>
       ) : null}

@@ -1,7 +1,11 @@
+import { FollowRequest, User } from '@prisma/client';
 import Image from 'next/image'
 import React from 'react'
 
-const FriendRequestList = () => {
+export type RequestWithUser = FollowRequest & {
+  sender: User;
+};
+const FriendRequestList = ({ requests }: { requests: RequestWithUser[] }) => {
   return (
     <>
       {/* {optimisticRequests.map((request) => ( */}

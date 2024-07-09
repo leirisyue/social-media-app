@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start --open",
+    "lint": "next lint",
+    "prisma": "npx prisma studio"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.1.6",
@@ -15,7 +16,8 @@
     "next": "15.0.0-rc.0",
     "prisma": "^5.16.1",
     "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "react-dom": "19.0.0-rc-f994737d14-20240522",
+    "svix": "^1.24.0"
   },
   "devDependencies": {
     "@types/node": "^20",
