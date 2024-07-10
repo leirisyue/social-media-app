@@ -9,6 +9,7 @@ import React from 'react'
 
 const ProfilePage = async ({ params }: { params: { username: string } }) => {
   const username = params.username;
+  console.log("🚀 ~ ProfilePage ~ username:", username);
 
   const user = await prisma.user.findFirst({
     where: {
@@ -90,7 +91,7 @@ const ProfilePage = async ({ params }: { params: { username: string } }) => {
                 </div>
               </div>
             </div>
-            {/* <Feed username={user.username} /> */}
+            <Feed username={user.username} />
           </div>
         </div>
         <div className="hidden lg:block w-[30%]">
