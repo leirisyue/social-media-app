@@ -3,8 +3,8 @@ import React, { Suspense } from 'react'
 import PostInfo from './PostInfo'
 import PostInteraction from './PostInteraction'
 import Comments from './Comments'
-import { User } from '@prisma/client'
 import { auth } from '@clerk/nextjs/server'
+import { Post as PostType, User } from "@prisma/client";
 
 type FeedPostType = PostType & { user: User } & {
   likes: [{ userId: string }];

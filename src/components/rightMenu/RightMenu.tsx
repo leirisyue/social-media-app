@@ -7,7 +7,7 @@ import UserMediaCard from '../user/UserMediaCard';
 import { User } from '@prisma/client';
 
 const RightMenu = ({ user }: { user?: User }) => {
-  console.log("🚀 ~ RightMenu ~ user:", user);
+  console.log(" RightMenu ~ user:", user);
 
   return (
     <>

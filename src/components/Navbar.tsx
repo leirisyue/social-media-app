@@ -1,10 +1,13 @@
-"use client"; 
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import MobileMenu from './MobileMenu'
-import { ClerkLoaded, ClerkLoading } from '@clerk/nextjs'
-import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
+import Link from "next/link";
+import MobileMenu from "./MobileMenu";
+import Image from "next/image";
+import {
+  ClerkLoaded,
+  ClerkLoading,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -12,7 +15,7 @@ const Navbar = () => {
       {/* LEFT */}
       <div className="md:hidden lg:block w-[20%]">
         <Link href="/" className="font-bold text-xl text-blue-600">
-          LAMASOCIAL
+          SOCIAL
         </Link>
       </div>
       {/* CENTER */}
@@ -51,8 +54,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='hidden xl:flex p-2 bg-slate-100 items-center rounded-xl'>
-          <input type="text" placeholder="search..." className="bg-transparent outline-none"/>
-          <Image src="/search.png" alt="" width={14} height={14}/>
+          <input type="text" placeholder="search..." className="bg-transparent outline-none" />
+          <Image src="/search.png" alt="" width={14} height={14} />
         </div>
       </div>
       {/* RIGHT */}
@@ -83,7 +86,7 @@ const Navbar = () => {
         <MobileMenu />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
