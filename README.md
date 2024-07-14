@@ -24,6 +24,7 @@ npx prisma db push
 ```
 npx prisma studio
 ```
+
 ### ngrok
 terminal (Admin)
 # install
@@ -43,5 +44,21 @@ ngrok http http://localhost:3000
 create Signing Secret in .env
 
 # Install svix
+
+### git
+```
+git init
+git add .
+git commit -m "commit"
+git remote add origin *repo*
+git checkout -b *nameBranch*
+git push -u origin *namebranch*
+git clone --single-branch -b *namebranch* *repo*
+```
+
+### ssh
+```
+ssh-keygen -t rsa
+pbcopy < ~/ .ssh/id_rsa.pub
 
 

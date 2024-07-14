@@ -11,9 +11,9 @@ const Stories = async () => {
   const stories = await prisma.story.findMany({
     where: {
       // cham hoi
-      // expiresAt: {
-      //   gt: new Date(),
-      // },
+      expiresAt: {
+        gt: new Date(),
+      },
       OR: [
         {
           user: {

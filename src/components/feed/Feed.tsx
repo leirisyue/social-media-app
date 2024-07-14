@@ -1,5 +1,5 @@
 import React from 'react'
-import PostFeed from './PostFeed'
+import Post from '../post/Post'
 import { auth } from '@clerk/nextjs/server';
 import prisma from '@/lib/client';
 
@@ -75,7 +75,7 @@ const Feed = async ({ username }: { username?: string }) => {
     <>
       <div className="p-4 bg-white shadow-md rounded-lg flex flex-col gap-12">
         {posts.length ? (posts.map(post => (
-          <PostFeed key={post.id} post={post} />
+          <Post key={post.id} post={post} />
         ))) : "No posts found!"}
       </div>
     </>

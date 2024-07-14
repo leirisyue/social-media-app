@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import React, { Suspense } from 'react'
-import PostInfo from './PostInfo'
-import PostInteraction from './PostInteraction'
-import Comments from './Comments'
-import { auth } from '@clerk/nextjs/server'
+import Image from "next/image";
 import { Post as PostType, User } from "@prisma/client";
+import PostInteraction from "./PostInteraction";
+import { Suspense } from "react";
+import PostInfo from "./PostInfo";
+import { auth } from "@clerk/nextjs/server";
+import Comments from "../feed/Comments";
 
 type FeedPostType = PostType & { user: User } & {
   likes: [{ userId: string }];
@@ -12,11 +12,10 @@ type FeedPostType = PostType & { user: User } & {
   _count: { comments: number };
 };
 
-const PostFeed = ({ post }: { post: FeedPostType }) => {
+const Post = ({ post }: { post: FeedPostType }) => {
   const { userId } = auth();
   return (
-    <>
-      <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       {/* USER */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
@@ -61,8 +60,7 @@ const PostFeed = ({ post }: { post: FeedPostType }) => {
         <Comments postId={post.id} />
       </Suspense>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default PostFeed
+export default Post;
