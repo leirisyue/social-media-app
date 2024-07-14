@@ -154,7 +154,7 @@ const UpdateUser = ({ user }: { user: User }) => {
                 </label>
                 <input
                   type="text"
-                  placeholder={user.website || "lama.dev"}
+                  placeholder={user.website || ""}
                   className="ring-1 ring-gray-300 p-[13px] rounded-md text-sm"
                   name="website"
                 />
