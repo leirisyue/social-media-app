@@ -11,31 +11,31 @@
 https://www.youtube.com/watch?v=o080tU3sd0k
 
 
-### Prisma
-# start
+# Prisma
+### start
 ```
 npx prisma init
 ```
-# create table
+### create table
 ```
 npx prisma db push
 ```
-# view schema
+### view schema
 ```
 npx prisma studio
 ```
 
-### ngrok
+# ngrok
 terminal (Admin)
-# install
+### install
 ```
 choco install ngrok
 ```
-# create token
+### create token
 ```
 ngrok config add-authtoken 2ivOO9tCv5pJLJxdfyEzHiBRE4f_6vpRmWYEDqK44VQeh8i6j
 ```
-# deploy app online
+### deploy app online
 ```
 ngrok http http://localhost:3000
 ```
@@ -43,9 +43,9 @@ ngrok http http://localhost:3000
 
 create Signing Secret in .env
 
-# Install svix
+### Install svix
 
-### git
+# git
 ```
 git init
 git add .
@@ -56,7 +56,7 @@ git push -u origin *namebranch*
 git clone --single-branch -b *namebranch* *repo*
 ```
 
-### ssh
+# ssh
 ```
 ssh-keygen -t rsa
 pbcopy < ~/ .ssh/id_rsa.pub
